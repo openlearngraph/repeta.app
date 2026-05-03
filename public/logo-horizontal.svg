@@ -1,0 +1,18 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Horizontal lockup: brand tile with R + wordmark -->
+  <rect x="20" y="20" width="200" height="200" rx="44" ry="44" fill="#60d1b9"/>
+  <text x="120" y="172"
+        text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif"
+        font-weight="700"
+        font-size="148"
+        letter-spacing="-6"
+        fill="#ffffff">R</text>
+
+  <text x="250" y="172"
+        font-family="Helvetica, Arial, sans-serif"
+        font-weight="700"
+        font-size="148"
+        letter-spacing="-5"
+        fill="#1f2937">Repeta<tspan fill="#60d1b9">.</tspan></text>
+</svg>
