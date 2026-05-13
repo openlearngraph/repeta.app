@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(Brand.website),
   title: {
     default: `${Brand.name} — ${Brand.tagline}`,
-    template: `%s · ${Brand.name}`
+    template: `%s · ${Brand.name}`,
   },
   description: Brand.description,
   applicationName: Brand.name,
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     "knowledge",
     "study",
     "trivia",
-    "education"
+    "education",
   ],
   icons: {
     icon: [
       { url: "/favicon.png", type: "image/png" },
-      { url: "/icon.png", type: "image/png", sizes: "1024x1024" }
+      { url: "/icon.png", type: "image/png", sizes: "1024x1024" },
     ],
-    apple: "/icon.png"
+    apple: "/icon.png",
   },
   openGraph: {
     type: "website",
@@ -34,31 +34,44 @@ export const metadata: Metadata = {
     title: `${Brand.name} — ${Brand.tagline}`,
     description: Brand.description,
     siteName: Brand.name,
-    images: [{ url: Brand.ogImage, width: 1200, height: 630 }]
+    images: [{ url: Brand.ogImage, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: `${Brand.name} — ${Brand.tagline}`,
     description: Brand.description,
-    images: [Brand.ogImage]
+    images: [Brand.ogImage],
   },
-  robots: { index: true, follow: true }
+  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
   themeColor: "#60d1b9",
   width: "device-width",
-  initialScale: 1
+  initialScale: 1,
 };
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">{children}</body>
+      <body className="min-h-screen flex flex-col">
+        {children}
+        <script
+          async
+          src="https://scripts.simpleanalyticscdn.com/latest.js"
+        ></script>
+        <noscript>
+          <img
+            src="https://queue.simpleanalyticscdn.com/noscript.gif"
+            alt=""
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </noscript>
+      </body>
     </html>
   );
 }
