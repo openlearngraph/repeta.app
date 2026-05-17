@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.repeta.app",
+      "sha256_cert_fingerprints": [
+        "BC:8C:14:65:EC:AD:03:4C:BC:84:B3:9F:3E:A2:2D:8A:4E:D0:91:FD:FD:34:0D:43:C5:A2:1C:0D:27:24:EA:80"
+      ]
+    }
+  }
+]

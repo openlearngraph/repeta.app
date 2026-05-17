@@ -1,0 +1,14 @@
+{
+  "webcredentials": {
+    "apps": ["TEAMID.com.repeta.app"]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAMID.com.repeta.app",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
